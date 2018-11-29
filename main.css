@@ -1,0 +1,43 @@
+body {
+    background-color:lightgray;
+    text-align:center;
+}
+
+.imageContainer {
+    width: 700px;
+    height: 500px;
+    border-radius:50%;
+}
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.landingHeader {
+    font-size:90px;
+    text-align:center;
+}
+
+.landHead {
+    display:inline-block;
+}
+/* LOGIN FORM */
+
+.loginContainer {
+    height: 30vh;
+}
+.login {
+    align-content:center;
+    margin: 0 auto;
+}
+
+.userInput, .userPassword {
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+/* PRODUCTS PAGE */
+
+.card-deck1 {
+    display:block;
+}
