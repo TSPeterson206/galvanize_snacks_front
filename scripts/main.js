@@ -112,6 +112,7 @@ const loadHTML = (dataPoint) => {
         </div>
     </div>`
 
+    document.getElementById('changeableHTML').innerHTML = '<link rel="stylesheet" href="./Products/products.css" id="changeableHTML">'
     return html
 }
 
@@ -121,18 +122,19 @@ const buildEventListeners = () => {
 
     for(let i = 0; i < data.length; i++) {
         productListener = document.getElementById(`productEntry-${i}`)
-        querySelectors.push(productListener)
+        querySelectors.push([productListener, data[i]])
     }
-
     querySelectors.map((ele) => {
-        ele.addEventListener('click', (e) => {
+        ele[0].addEventListener('click', (e) => {
             e.preventDefault()
 
-            const productPage = loadHTML(ele)
+            const productPage = loadHTML(ele[1])
 
             document.querySelector(`.productFocusMain`).innerHTML = productPage
-
-            window.location.reload(true)
         })
     })
 }
+
+document.addEventListener("DOMContentLoaded", (e) => {
+    buildEventListeners()
+})
