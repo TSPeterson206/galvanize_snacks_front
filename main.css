@@ -1,43 +1,47 @@
 body {
-    background-color:lightgray;
-    text-align:center;
+    background-color: lightgray;
+    text-align: center;
 }
 
 .imageContainer {
     width: 700px;
     height: 500px;
-    border-radius:50%;
+    border-radius: 50%;
 }
+
 .container img {
     width: 100%;
     height: auto;
 }
 
 .landingHeader {
-    font-size:90px;
-    text-align:center;
+    font-size: 90px;
+    text-align: center;
 }
 
 .landHead {
-    display:inline-block;
+    display: inline-block;
 }
+
 /* LOGIN FORM */
 
 .loginContainer {
     height: 30vh;
 }
+
 .login {
-    align-content:center;
+    align-content: center;
     margin: 0 auto;
 }
 
-.userInput, .userPassword {
+.userInput,
+.userPassword {
     margin-top: 5px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
 /* PRODUCTS PAGE */
 
 .card-deck1 {
-    display:block;
+    display: block;
 }
